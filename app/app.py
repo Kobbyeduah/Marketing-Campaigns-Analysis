@@ -7,7 +7,7 @@ from sklearn.preprocessing import LabelEncoder
 
 # Load pre-trained Random Forest model from a compressed file
 def load_model():
-    with gzip.open(r'C:\Users\kobby\Downloads\data 1\Marketing-Campaigns-Analysis\app\best_random_forest_model_compressed.pkl.gz', 'rb') as file:
+    with gzip.open(r'Marketing-Campaigns-Analysis\app\best_random_forest_model_compressed.pkl.gz', 'rb') as file:
         model = pickle.load(file)
     return model
 
@@ -53,7 +53,7 @@ def preprocess_input_data(data):
 # Page 1: Introduction and background
 def page1():
     st.title("Bank Term Deposit Prediction App")
-    st.image(r"C:\Users\kobby\Downloads\data 1\Marketing-Campaigns-Analysis\app\Marketing-campaign-image-for-article-4939049309430393093.jpg", use_column_width=True)
+    st.image(r"Marketing-Campaigns-Analysis\app\Marketing-campaign-image-for-article-4939049309430393093.jpg", use_column_width=True)
 
     st.header("Introduction")
     st.write("""
@@ -70,7 +70,7 @@ def page1():
 # Page 2: Single Prediction
 def page2():
     st.title("Single Client Prediction")
-    st.image(r"C:\Users\kobby\Downloads\data 1\Marketing-Campaigns-Analysis\app\Finance-and-Retail-Banking-Blog-Post.jpg", use_column_width=True)
+    st.image(r"Marketing-Campaigns-Analysis\app\Finance-and-Retail-Banking-Blog-Post.jpg", use_column_width=True)
 
     st.header("Enter Client Details")
     col1, col2 = st.columns(2)
